@@ -1,4 +1,4 @@
-# Descripción de la Aplicación Express
+# Descripción de la Test-api
 
 Esta aplicación Express proporciona un servidor con funciones de autenticación básicas y operaciones CRUD en una lista de usuarios. Utiliza JSON Web Tokens (JWT) para la autenticación y proporciona una documentación Swagger para facilitar la comprensión y prueba de las API.
 
