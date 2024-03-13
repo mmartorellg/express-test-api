@@ -45,11 +45,12 @@ app.get('/users', (req, res) => {
 app.put('/users', (req, res) => {
   const token = req.headers['x-access-token']
   if (!token) return res.status(403).send({ auth: false, message: 'No token provided.' })
-  if (!req.body.name || !req.body.email) return res.status(400).send('Bad Request')
+  if (!req.body.name || !req.body.email || !req.body.roles) return res.status(400).send('Bad Request')
   const newUser = {
     id: users.length + 1,
     name: req.body.name,
-    email: req.body.email
+    email: req.body.email,
+    roles: req.body.roles
   }
   users.push(newUser)
   return res.status(200).send(newUser)
