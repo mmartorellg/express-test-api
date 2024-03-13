@@ -16,8 +16,7 @@ Esta aplicación Express proporciona un servidor con funciones de autenticación
 
 1. Inicia la aplicación: `yarn start` o `npm start`
 2. Accede a la URL raíz para comprobar que el servidor está en funcionamiento: `http://localhost:3000/health`
-3. Para autenticarte y obtener un token JWT, realiza una solicitud POST a: `http://localhost:3000/login` con las credenciales de prueba (usuario: 'test', contraseña: 'test').
-   **Nota:** Para un inicio de sesión correcto, utiliza el usuario 'test' y la contraseña 'test'.
+3. Para autenticarte y obtener un token JWT, realiza una solicitud POST a: `http://localhost:3000/login` **Nota:** Para un inicio de sesión correcto, utiliza el usuario 'test' y la contraseña 'test'.
 4. Utiliza el token JWT obtenido para realizar operaciones CRUD en la lista de usuarios.
 
 ## Rutas
