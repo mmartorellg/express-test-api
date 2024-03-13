@@ -10,13 +10,14 @@ Esta aplicación Express proporciona un servidor con funciones de autenticación
 ## Instalación
 
 1. Clona este repositorio: `git clone https://github.com/mmartorellg/express-test-api.git`
-2. Instala las dependencias: `npm install`
+2. Instala las dependencias: `yarn install` o `npm install`
 
 ## Uso
 
-1. Inicia la aplicación: `npm start`
+1. Inicia la aplicación: `yarn start` o `npm start`
 2. Accede a la URL raíz para comprobar que el servidor está en funcionamiento: `http://localhost:3000/health`
 3. Para autenticarte y obtener un token JWT, realiza una solicitud POST a: `http://localhost:3000/login` con las credenciales de prueba (usuario: 'test', contraseña: 'test').
+   **Nota:** Para un inicio de sesión correcto, utiliza el usuario 'test' y la contraseña 'test'.
 4. Utiliza el token JWT obtenido para realizar operaciones CRUD en la lista de usuarios.
 
 ## Rutas
@@ -34,7 +35,7 @@ Accede a la documentación Swagger en: `http://localhost:3000/api-docs`
 ## Requisitos
 
 - Node.js instalado
-- npm instalado
+- npm o yarn instalado
 
 ## Contribuir
 
